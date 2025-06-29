@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Set up oh my posh
+eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/amro.omp.json)"
