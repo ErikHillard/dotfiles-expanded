@@ -24,3 +24,7 @@ set laststatus=2
 
 set showcmd
 set background=dark
+set scrolloff=10
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz

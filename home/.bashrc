@@ -106,13 +106,17 @@ fi
 export PATH="$PATH:~/.local/bin/:/usr/sbin/"
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/ehillard/.local/share/flatpak/exports/share"
 
-eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/amro.omp.json)"
+# Init is the things that need to be run before anything else
 if [ -f ~/.extras/init ]; then
     . ~/.extras/init
 fi
+
+# Set up aliases
 if [ -f ~/.extras/aliases ]; then
     . ~/.extras/aliases
 fi
+
+# Set up git config and aliases
 if [ -f ~/.extras/gitrc ]; then
     . ~/.extras/gitrc
 fi
