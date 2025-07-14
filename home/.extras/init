@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Set up oh my posh
-eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/amro.omp.json)"
+if command -v oh-my-posh &> /dev/null; then
+	eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/amro.omp.json)"
+fi
 
 # Set up fzf key bindings and fuzzy completion
 if command -v fzf &> /dev/null; then
